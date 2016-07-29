@@ -133,7 +133,7 @@ func matchSSHD(data []byte) bool {
 
 There's more boilerplate for matchers created with ragel, but we can still see
 the regexp there.  The `@{ return true }` says that if the state machine gets
-to that point, the action should be to return `true from the function.
+to that point, the action should be to return `true` from the function.
 Otherwise, execution falls through the state machine and we return `false` for
 no match.  The input language is fully documented in the manual available
 online at https://www.colm.net/files/ragel/ragel-guide-6.9.pdf
