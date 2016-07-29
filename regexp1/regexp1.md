@@ -98,7 +98,7 @@ var reSSHD = regexp.MustCompile(`sshd\[\d{5}\]:\s*Failed`)
 
 func BenchmarkRegex(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		if r.Match(data) {
+		if reSSHD.Match(data) {
 			hits++
 		}
 	}
